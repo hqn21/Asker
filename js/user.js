@@ -14,7 +14,7 @@ function mailSend() {
     if($("#mailContent").hasClass("is-valid")) {
         $.ajax({
             type: "POST",
-            url: "php/main.php",
+            url: "https://ask.haoquan.me/php/main.php",
             dataType: "json",
             data: {
                 mode: "mailSend",

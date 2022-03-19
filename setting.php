@@ -75,6 +75,9 @@
             }
         }
     }
+    else {
+        header("Location: login");
+    }
     ?>
 
     <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
@@ -206,6 +209,14 @@
                     </div>
                     <div id="email-notice" class="form-text">用以找回密碼或通知等事務。</div>
                 </div>
+                <div class="mb-3">
+                    <label for="url" class="form-label">詢問頁面</label>
+                    <textarea id="urlContent" style="opacity: .01; height: 0; position: absolute; z-index: -1;">https://ask.haoquan.me/user/<?php echo $account; ?></textarea>
+                    <div class="d-grid gap-2">
+                        <button onclick="copyUrl()" id="url" type="button" class="btn btn-secondary text-white">複製連結</button>
+                    </div>
+                </div>
+
                 <div class="mb-3">
                     <label for="password" class="form-label">密碼設定</label>
                     <div class="d-grid gap-2">

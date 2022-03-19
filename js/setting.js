@@ -1,5 +1,12 @@
 var passwordShow = [0, 0, 0];
 
+function copyUrl() {
+    var urlContent = document.getElementById("urlContent");
+    urlContent.select();
+    document.execCommand("copy");
+    alert("OK");
+}
+
 function logout() {
     // 將按鈕轉為不可用
     $("#logoutSubmit").addClass("disabled");

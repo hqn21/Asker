@@ -84,6 +84,9 @@
             }
         }
     }
+    else {
+        header("Location: login");
+    }
     ?>
 
     <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
@@ -158,7 +161,7 @@
                             加入天數
                         </div>
                         <div class="card-body">
-                            <p class="card-text"><?php echo intval((time() - $userDetails["first_join"]) / (60*60*24)); ?></p>
+                            <p class="card-text"><?php echo intval((time() - $userDetails["first_join"]) / (60*60*24) + 1); ?></p>
                         </div>
                     </div>
                 </div>
