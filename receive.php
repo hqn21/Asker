@@ -63,7 +63,7 @@
             $mysql = mysqli_connect($mysql_hostname, $mysql_username, $mysql_password, $mysql_database);
             mysqli_query($mysql, "SET NAMES utf8mb4");
             $userDetails = mysqli_fetch_assoc(mysqli_query($mysql, "SELECT * FROM user_details WHERE account = '$account'"));
-            $userReceiveSelect = mysqli_query($mysql, "SELECT * FROM user_receive WHERE account = '$account'");
+            $userReceiveSelect = mysqli_query($mysql, "SELECT * FROM user_receive WHERE account = '$account' ORDER BY timestamp DESC");
             $receiveDetail = array(array());
             $i = 0;
             while($userReceive = mysqli_fetch_assoc($userReceiveSelect)) {
@@ -72,16 +72,16 @@
                 $i++;
             }
             // Bubble Sort
-            $temp = array();
-            for($k = 0; $k < $i - 1; $k++) {
-                for($j = 0; $j < $i - $k - 1; $j++) {
-                    if($receiveDetail[$j]["timestamp"] < $receiveDetail[$j+1]["timestamp"]) {
-                        $temp = $receiveDetail[$j];
-                        $receiveDetail[$j] = $receiveDetail[$j+1];
-                        $receiveDetail[$j+1] = $temp;
-                    }
-                }
-            }
+            // $temp = array();
+            // for($k = 0; $k < $i - 1; $k++) {
+            //     for($j = 0; $j < $i - $k - 1; $j++) {
+            //         if($receiveDetail[$j]["timestamp"] < $receiveDetail[$j+1]["timestamp"]) {
+            //             $temp = $receiveDetail[$j];
+            //             $receiveDetail[$j] = $receiveDetail[$j+1];
+            //             $receiveDetail[$j+1] = $temp;
+            //         }
+            //     }
+            // }
         }
     }
     else {
