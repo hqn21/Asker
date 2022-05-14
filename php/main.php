@@ -141,7 +141,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 ), JSON_UNESCAPED_UNICODE);
                 break;
             }
-            if(mb_strlen($mailContent, "utf-8") > 100 || mb_strlen($mailContent, "utf-8") < 1) {
+            if(mb_strlen($mailContent, "utf-8") > 100 || mb_strlen($mailContent, "utf-8") < 1 || strpos($mailContent, "<script>") !== false || strpos($mailContent, "</script>") !== false) {
                 echo json_encode(array(
                     "status" => 0,
                     "message" => "寄件失敗，信件內容字數超過100或為空。"
