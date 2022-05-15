@@ -1,5 +1,5 @@
 # Asker
-English(https://github.com/hqn21/Asker/blob/main/README.md) | 繁體中文
+[English](https://github.com/hqn21/Asker/blob/main/README.md) | 繁體中文
 ## 關於專案
 此專案是一個線上匿名信箱網站，提供用戶創建自己的帳戶接收來自匿名用戶的訊息。
 ### 必要條件
