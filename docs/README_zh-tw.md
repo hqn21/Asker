@@ -27,10 +27,10 @@ Asker/
 ├── receive.php
 └── user.php
 ```
-### 資料庫結構
+### 資料表結構
 user_details
 
-|     Index     |     Type     |  Encoding   | Default |                 Meaning                 |
+|     名稱      |     類型      |  編碼       | 預設值   |                 意義                    |
 |---------------|--------------|-------------|---------|-----------------------------------------|
 | account       | varchar(16)  | utf8mb4_bin | N/A     | 用戶帳號                                 |
 | nickname      | varchar(10)  | utf8mb4_bin | NULL    | 用戶暱稱                                 |
@@ -42,7 +42,7 @@ user_details
 
 user_receive
 
-|    Index    |     Type     |  Encoding   | Default |               Meaning               |
+|     名稱     |     類型     |  編碼       | 預設值   |                 意義                |
 |-------------|--------------|-------------|---------|-------------------------------------|
 | account     | varchar(16)  | utf8mb4_bin | N/A     | 用戶帳號                             |
 | mailContent | varchar(100) | utf8mb4_bin | N/A     | 訊息內容                             |
@@ -54,7 +54,7 @@ user_receive
 * PHP 7.2
 * JavaScript ES6
 ### 安裝步驟
-1. 複製 repo
+1. 複製此 repo
    ```sh
    git clone https://github.com/hqn21/Asker.git
    ```
@@ -67,7 +67,7 @@ user_receive
    $mysql_database = "";
    ```
 ## License
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+根據 MIT License 發布，查看 [LICENSE](LICENSE) 以獲得更多資訊。
 ## 聯絡我
 劉顥權 Haoquan Liu - [contact@haoquan.me](mailto:contact@haoquan.me)
 
