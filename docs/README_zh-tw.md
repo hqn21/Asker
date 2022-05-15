@@ -66,6 +66,8 @@ user_receive
    $mysql_password = "";
    $mysql_database = "";
    ```
+## 成品演示
+[https://ask.haoquan.me](https://ask.haoquan.me)
 ## License
 根據 MIT License 發布，查看 [LICENSE](LICENSE) 以獲得更多資訊。
 ## 聯絡我
