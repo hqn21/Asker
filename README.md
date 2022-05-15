@@ -55,6 +55,9 @@ Follow the instructions to set up the project locally.
 * JavaScript ES6
 ### Installation
 1. Clone the repo
+   ```sh
+   git clone https://github.com/hqn21/Asker.git
+   ```
 2. Create MySQL database tables with informations mentioned above
 3. Enter your MySQL Server Information in `php/config.php`
    ```php
