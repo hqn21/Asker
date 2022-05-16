@@ -1,7 +1,7 @@
 # Asker
 English | [繁體中文](docs/README_zh-tw.md)
 ## About The Project
-This project is an online message box which allows users to create their own account and receive messages from anonymous visitors.
+This is an online message box which allows users to create their own account and receive messages from anonymous visitors.
 ### Built With
 * MySQL
 * jQuery
