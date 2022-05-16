@@ -69,7 +69,7 @@ user_receive
 ## 成品演示
 [https://ask.haoquan.me](https://ask.haoquan.me)
 ## License
-根據 MIT License 發布，查看 [LICENSE](LICENSE) 以獲得更多資訊。
+根據 MIT License 發布，查看 [LICENSE](https://github.com/hqn21/Asker/blob/main/LICENSE) 以獲得更多資訊。
 ## 聯絡我
 劉顥權 Haoquan Liu - [contact@haoquan.me](mailto:contact@haoquan.me)
 
